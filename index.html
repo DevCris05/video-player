@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <video
+          id="video"
+          src="https://media.w3.org/2010/05/sintel/trailer.mp4"
+          width="500"
+          poster="./images/poster.jpg"
+        ></video>
+        <div class="player-overlay" id="overlay">
+          <h2 class="player-title">Musica para programar</h2>
+          <div class="player-actions">
+            <button
+              class="button"
+              id="backward"
+              aria-label="retroceder 10 segundos"
+              title="retroceder 10 segundos"
+            ></button>
+            <button
+              class="button"
+              id="play"
+              aria-label="play"
+              title="play"
+            ></button>
+            <button
+              class="button"
+              hidden
+              id="pause"
+              aria-label="pause"
+              title="pause"
+            ></button>
+            <button
+              class="button"
+              id="forward"
+              aria-label="avanzar 10 segundos"
+              title="avanzar 10 segundos"
+            ></button>
+          </div>
+          <div class="player-progress">
+            <input type="range" id="progress" min="0" value="0" step="1" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
